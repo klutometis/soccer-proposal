@@ -37,7 +37,7 @@ jobs:
 
       - name: Build
         working-directory: ./slides
-        run: npm run build -- --base /build-with-ai/
+        run: npm run build -- --base /soccer-proposal/
 
       - uses: actions/configure-pages@v4
 
