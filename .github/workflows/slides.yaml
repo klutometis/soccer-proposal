@@ -1,4 +1,4 @@
-name: Deploy slides
+name: Deploy pages
 
 on:
   workflow_dispatch: {}
@@ -24,27 +24,26 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "lts/*"
+          node-version: 'lts/*'
 
-      - name: Build slides
+      - name: Install dependencies
         working-directory: ./slides
-        run: |
-          npm install
-          # Need to do this explicitly, since playwright-chromium is
-          # only listed as a `peerDependencies`.
-          npm install -D playwright-chromium
-          npm run build -- --base /soccer-proposal
+        run: npm install
 
-      - name: Create deployment root
-        run: |
-          mkdir -pv root
-          cp -frv ./slides/dist ./root
+      # Need to do this explicitly, since playwright-chromium is only
+      # listed as a `peerDependencies`.
+      - name: Install Playwright
+        run: npm install -D playwright-chromium
+
+      - name: Build
+        working-directory: ./slides
+        run: npm run build -- --base /build-with-ai/
 
       - uses: actions/configure-pages@v4
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: root
+          path: slides/dist
 
       - name: Deploy
         id: deployment
