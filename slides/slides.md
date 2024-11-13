@@ -51,6 +51,6 @@ overviewSnapshots: true
 
 <span v-mark.highlight.yellow>For instance:</span>
 
-- [Mansión Reggaetón](https://open.spotify.com/playlist/37i9dQZF1DWZjqjZMudx9T)
-- [Angry hard rock mix](https://open.spotify.com/playlist/37i9dQZF1EIfLeXYo5Rqhb)
-- [Baroque bangers](https://open.spotify.com/playlist/4A4DwhBNHsOVK8AdtZ3HFr)
+- <span v-mark="{color: 'cyan', brackets: ['left','right'], type: 'bracket'}">[Mansión Reggaetón](https://open.spotify.com/playlist/37i9dQZF1DWZjqjZMudx9T)</span>
+- <span v-mark.box.black>[Angry hard rock mix](https://open.spotify.com/playlist/37i9dQZF1EIfLeXYo5Rqhb)</span>
+- <span v-mark.underline.green>[Baroque bangers](https://open.spotify.com/playlist/4A4DwhBNHsOVK8AdtZ3HFr)</span>
