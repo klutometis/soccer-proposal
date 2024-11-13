@@ -6,11 +6,6 @@ theme: seriph
 background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
 title: Soccer proposal
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
 # apply unocss classes to the current slide
 class: text-center
 # https://sli.dev/features/drawing
