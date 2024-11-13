@@ -51,6 +51,8 @@ overviewSnapshots: true
 
 <span v-mark.highlight.yellow>For instance:</span>
 
-- <span v-mark="{color: 'cyan', brackets: ['left','right'], type: 'bracket'}">[Mansión Reggaetón](https://open.spotify.com/playlist/37i9dQZF1DWZjqjZMudx9T)</span>
-- <span v-mark.box.black>[Angry hard rock mix](https://open.spotify.com/playlist/37i9dQZF1EIfLeXYo5Rqhb)</span>
-- <span v-mark.underline.green>[Baroque bangers](https://open.spotify.com/playlist/4A4DwhBNHsOVK8AdtZ3HFr)</span>
+- <span v-mark="{color: 'lime', brackets: ['left','right'], type: 'bracket'}">[Mansión Reggaetón](https://open.spotify.com/playlist/37i9dQZF1DWZjqjZMudx9T) — For when the game needs a little extra **spice** 🌶️</span>
+- <span v-mark.underline.orange>[Angry hard rock mix](https://open.spotify.com/playlist/37i9dQZF1EIfLeXYo5Rqhb) — Rage your way through that missed goal! 🤘</span>
+- <span v-mark.box.cyan>[Baroque bangers](https://open.spotify.com/playlist/4A4DwhBNHsOVK8AdtZ3HFr) — Because every team needs a little *classical* edge ⚔️</span>
+- <span v-mark.highlight.pink>[Disco fever](https://open.spotify.com/playlist/37i9dQZF1DX2GKumqRIZ7g) — For *vintage moves* and fancy footwork ✨🕺</span>
+- <span v-mark.crossed-off.yellow>[Synthwave Sprint](https://open.spotify.com/playlist/7gh5NAVKOqUZ8fPrM5NvXh) — Run like it’s the **future** 🌆</span>
